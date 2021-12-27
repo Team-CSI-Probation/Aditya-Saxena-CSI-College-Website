@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+body {
+  background-color: yellow;
+}
+
+.logo {
+  width: 100px;
+  border-radius: 50px;
+  float: left;
+  margin-left: 120px;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.navlist {
+  width: 100%;
+  padding: 5px 10vw;
+}
+
+.navlist ul {
+  display: flex;
+  list-style: none;
+  margin-top: 40px;
+}
+
+.navlist ul li:first-child {
+  flex: 1;
+}
+
+.navlist ul a {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.back {
+  width: 1519px;
+  height: 600px;
+  margin: 0px;
+  /* object-fit: contain; */
+}
