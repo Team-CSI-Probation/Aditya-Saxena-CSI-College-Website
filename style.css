@@ -5,41 +5,46 @@
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
+html {
+  font-size: 61%;
+}
+
 body {
   background-color: #7395ae;
 }
 
 .logo {
-  width: 80px;
-  border-radius: 40px;
+  width: 8rem;
+  border-radius: 4rem;
   float: left;
-  margin: 10px;
+  margin: 1rem;
 }
 
 .navlist {
   width: 100%;
-  height: 110px;
-  padding: 5px 10vw;
+  height: 11rem;
+  padding: 0.5rem 10vw;
   background-color: #4056a1;
   position: fixed;
+  z-index: 10000;
 }
 
 .navlist ul {
   display: flex;
   list-style: none;
-  margin-top: 35px;
+  margin-top: 3.5rem;
 }
 
 .navlist ul li:first-child {
   flex: 1;
-  font-size: 32px;
-  margin-top: -16px;
+  font-size: 3.2rem;
+  margin-top: -1.6rem;
 }
 
 .navlist ul a {
-  margin-left: 10px;
-  margin-right: 10px;
-  font-size: 20px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-size: 2rem;
   text-decoration: none;
   color: white;
 }
@@ -48,86 +53,135 @@ body {
   color: yellow;
 }
 
-.back {
-  width: 1519px;
-  height: 600px;
-  margin-top: 100px;
+.slider {
+  overflow: hidden;
+  z-index: -1000;
+}
+
+.slidebox {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 20s slider infinite;
+}
+
+.slidebox img {
+  width: 20%;
+  float: left;
+  margin-top: 11rem;
+  height: 60rem;
+}
+
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
 }
 
 .box1 {
-  margin: 50px;
+  margin: 5rem;
   background-color: #557a95;
-  border-radius: 50px;
-  padding-right: 20px;
+  height: 62.8rem;
+  border-radius: 5rem;
+  padding-right: 2rem;
 }
 
 .b1 {
-  margin-right: 50px;
-  width: 900px;
-  height: 628px;
-  border-radius: 50px;
+  margin-right: 5rem;
+  width: 90rem;
+  height: 62.8rem;
+  border-radius: 5rem;
   float: left;
 }
 
 .para {
   text-align: center;
-  font-size: 30px;
-  margin-top: 30px;
+  font-size: 3rem;
+  margin-top: 2rem;
 }
 
 .heads {
   text-align: center;
-  font-size: 40px;
+  font-size: 4rem;
+  padding-top: 3rem;
 }
 
 .box2 {
-  margin: 50px;
+  margin: 5rem;
+  height: 57.6rem;
   background-color: #557a95;
-  border-radius: 50px;
-  padding-left: 20px;
+  border-radius: 5rem;
+  padding-left: 2rem;
 }
 
 .b2 {
-  margin-left: 50px;
-  width: 900px;
-  height: 576px;
-  border-radius: 50px;
+  margin-left: 5rem;
+  width: 90rem;
+  height: 57.6rem;
+  border-radius: 5rem;
   float: right;
 }
 
 .box2 ul {
-  font-size: 35px;
-  padding-left: 30px;
-  margin-top: 40px;
+  font-size: 3.5rem;
+  padding-left: 3rem;
+  margin-top: 4rem;
 }
 
 .box3 {
-  margin: 50px;
+  margin: 5rem;
+  height: 66rem;
   background-color: #557a95;
-  border-radius: 50px;
-  padding-right: 20px;
+  border-radius: 5rem;
+  padding-right: 2rem;
 }
 
 .b3 {
-  margin-right: 50px;
-  width: 900px;
-  height: 660px;
-  border-radius: 50px;
+  margin-right: 5rem;
+  width: 90rem;
+  height: 66rem;
+  border-radius: 5rem;
   float: left;
 }
 
 .box4 {
-  margin: 50px;
+  margin: 5rem;
+  height: 66rem;
   background-color: #557a95;
-  border-radius: 50px;
-  padding-left: 20px;
+  border-radius: 5rem;
+  padding-left: 2rem;
 }
 
 .b4 {
-  margin-left: 50px;
-  width: 900px;
-  height: 593px;
-  border-radius: 50px;
+  margin-left: 5rem;
+  width: 90rem;
+  height: 66rem;
+  border-radius: 5rem;
   float: right;
 }
 
@@ -135,7 +189,7 @@ body {
   width: 80%;
   margin: auto;
   background-color: #557a95;
-  border-radius: 50px;
+  border-radius: 5rem;
 }
 
 .box5 .row {
@@ -150,11 +204,11 @@ body {
 .box5 img {
   width: 100%;
   height: auto;
-  border-radius: 50px;
-  margin: 20px;
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
+  border-radius: 5rem;
+  margin: 2rem;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .footer {
@@ -163,22 +217,26 @@ body {
   bottom: 0;
   background-color: #4056a1;
   color: white;
-  margin-top: 50px;
-  height: 262px;
+  margin-top: 5rem;
+  height: 26.2rem;
+  font-size: 2rem;
 }
 
 .footer ul {
   display: flex;
   list-style: none;
-  margin: 30px;
-  padding-left: 70px;
-  padding-right: 70px;
+  margin-top: 3rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-bottom: 2rem;
+  padding-left: 7rem;
+  padding-right: 7rem;
 }
 
 .foot ul {
   display: table;
   list-style: symbols();
-  margin-top: 35px;
+  margin-top: 3.5rem;
 }
 
 .foot li a {
@@ -191,17 +249,191 @@ body {
 
 .icon {
   float: left;
-  height: 18px;
-  width: 18px;
+  height: 1.8rem;
+  width: 1.8rem;
 }
 
 .f1 {
-  width: 200px;
+  width: 20rem;
 }
 
 .btt {
-  margin: 0px;
-  padding-bottom: 30px;
+  margin: 0rem;
+  padding-bottom: 3rem;
   position: relative;
   left: 45%;
+}
+
+@media only screen and (max-width: 1488px) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@media only screen and (max-width: 1438px) {
+  html {
+    font-size: 58%;
+  }
+}
+
+@media only screen and (max-width: 1388px) {
+  html {
+    font-size: 56%;
+  }
+}
+
+@media only screen and (max-width: 1338px) {
+  html {
+    font-size: 54%;
+  }
+}
+
+@media only screen and (max-width: 1288px) {
+  html {
+    font-size: 52%;
+  }
+}
+
+@media only screen and (max-width: 1238px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media only screen and (max-width: 1188px) {
+  html {
+    font-size: 48%;
+  }
+}
+
+@media only screen and (max-width: 1138px) {
+  html {
+    font-size: 46%;
+  }
+}
+
+@media only screen and (max-width: 1088px) {
+  html {
+    font-size: 44%;
+  }
+}
+
+@media only screen and (max-width: 1038px) {
+  html {
+    font-size: 42%;
+  }
+}
+
+@media only screen and (max-width: 988px) {
+  html {
+    font-size: 40%;
+  }
+}
+
+@media only screen and (max-width: 938px) {
+  html {
+    font-size: 38%;
+  }
+}
+
+@media only screen and (max-width: 888px) {
+  html {
+    font-size: 36%;
+  }
+}
+
+@media only screen and (max-width: 838px) {
+  html {
+    font-size: 34%;
+  }
+}
+
+@media only screen and (max-width: 788px) {
+  html {
+    font-size: 32%;
+  }
+}
+
+@media only screen and (max-width: 738px) {
+  html {
+    font-size: 30%;
+  }
+}
+
+@media only screen and (max-width: 688px) {
+  html {
+    font-size: 28%;
+  }
+}
+
+@media only screen and (max-width: 638px) {
+  html {
+    font-size: 26%;
+  }
+}
+
+@media only screen and (max-width: 588px) {
+  html {
+    font-size: 24%;
+  }
+}
+
+@media only screen and (max-width: 538px) {
+  html {
+    font-size: 22%;
+  }
+}
+
+@media only screen and (max-width: 488px) {
+  html {
+    font-size: 20%;
+  }
+}
+
+@media only screen and (max-width: 438px) {
+  html {
+    font-size: 17.5%;
+  }
+}
+
+@media only screen and (max-width: 388px) {
+  html {
+    font-size: 15%;
+  }
+}
+
+@media only screen and (max-width: 338px) {
+  html {
+    font-size: 13%;
+  }
+}
+
+@media only screen and (max-width: 288px) {
+  html {
+    font-size: 11%;
+  }
+}
+
+@media only screen and (max-width: 238px) {
+  html {
+    font-size: 9%;
+  }
+}
+
+@media only screen and (max-width: 188px) {
+  html {
+    font-size: 7%;
+  }
+}
+
+@media only screen and (max-width: 138px) {
+  html {
+    font-size: 5%;
+  }
+}
+
+@media only screen and (max-width: 88px) {
+  html {
+    font-size: 3%;
+  }
 }
